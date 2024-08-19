@@ -19,9 +19,12 @@ export class HomeComponent {
   onProductOutput(product: Product) {
     console.log(product, 'Output');
   }
+  
   onPageChange(event:any){
     this.fetchProducts(event.page, event.rows)
   }
+
+
   fetchProducts(page: number, perPage: number) {
     this.productsService
       .getProducts('http://localhost:3000/clothes', {
@@ -33,6 +36,7 @@ export class HomeComponent {
         this.totalRecord=products.total;
       });
   }
+
   ngOnInit() {
     this.fetchProducts(0,5)
   }
