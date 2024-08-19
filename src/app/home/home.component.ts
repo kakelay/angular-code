@@ -16,6 +16,7 @@ export class HomeComponent {
   constructor(private productsService: ProductsService) {}
   products: Product[] = [];
   totalRecord:number=0;
+  rows:number=5;
   onProductOutput(product: Product) {
     console.log(product, 'Output');
   }
@@ -38,6 +39,6 @@ export class HomeComponent {
   }
 
   ngOnInit() {
-    this.fetchProducts(0,5)
+    this.fetchProducts(0,this.rows)
   }
 }
