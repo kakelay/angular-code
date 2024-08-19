@@ -1,0 +1,74 @@
+// .wrapper {
+//   width: 250px;
+//   img {
+//     aspect-ratio: 1;
+//     object-fit: contain;
+//     width: 100%;
+//     border-radius: 15px;
+//     background-color: grey;
+//   }
+//   .title {
+//     font-weight: 700;
+//     font-size: 1.5rem;
+//   }
+//   .price.label {
+//     font-weight: 300;
+//     font-size: 1rem;
+//   }
+//   .price {
+//     font-weight: 500;
+//     font-size: 1rem;
+//     font-family: sans-serif;
+//   }
+// }
+.wrapper {
+    width: 260px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #e0e0e0;
+  }
+  
+  .title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 10px 0;
+    color: #333;
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns the price to the left */
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .price-label {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .price {
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: #ff5733;
+  }
+  
